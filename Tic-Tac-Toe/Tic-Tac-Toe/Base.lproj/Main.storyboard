@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Tic_Tac_Toe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDz-pw-FCG">
+                                <rect key="frame" x="11" y="145" width="100" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="XZo-8g-ZOf"/>
+                                    <constraint firstAttribute="height" constant="94" id="yKO-c5-nsi"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="nought.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board.png" translatesAutoresizingMaskIntoConstraints="NO" id="NRt-Dy-bP3">
+                                <rect key="frame" x="0.0" y="131" width="375" height="405"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="To0-7j-AMK"/>
+                                    <constraint firstAttribute="height" constant="405" id="Xt3-cB-AeN"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NRt-Dy-bP3" firstAttribute="leading" secondItem="YDz-pw-FCG" secondAttribute="leading" constant="-11" id="Fvh-DR-j0a"/>
+                            <constraint firstItem="NRt-Dy-bP3" firstAttribute="top" secondItem="YDz-pw-FCG" secondAttribute="top" constant="-14" id="TKG-Th-Bm6"/>
+                            <constraint firstAttribute="centerY" secondItem="NRt-Dy-bP3" secondAttribute="centerY" id="ZEG-ZV-dUe"/>
+                            <constraint firstAttribute="centerX" secondItem="NRt-Dy-bP3" secondAttribute="centerX" id="nrA-2X-2YN"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379.5" y="336.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="board.png" width="744" height="783"/>
+        <image name="nought.png" width="214" height="214"/>
+    </resources>
+</document>
